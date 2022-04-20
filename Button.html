@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Button.css">
+        <title>The Button</title>
+    </head>
+    <body>
+      
+      <div>
+        <div class = "plus">
+          <script src="../09 javascript - the button/Button.js"></script>
+          <button onclick="clickPlus()" class="plus">+</button>
+        </div>
+        <div class = "minus">
+          <script src="../09 javascript - the button/Button.js"></script>
+          <button onclick="clickMinus()" class="minus">-</button>
+        </div>
+        <div class="step">
+          <input class = "step" id = "step" type="number">
+          <button onclick="clickStep()" class="step">Save Step</button>
+        </div>
+        <div>
+          <input class = "limit" id = "limit" type="number">
+          <button onclick="clickLimit()" class="limit">Save Limit</button>
+        </div>
+      </div>
+      <div>
+        <p id="number" class="number">0</p>
+      </div>
+      <div>
+        <p id="boom" class="boom"></p>
+      </div>
+      <script>
+        writeInput();
+        </script>
+    </body>
+    
+    </html>
